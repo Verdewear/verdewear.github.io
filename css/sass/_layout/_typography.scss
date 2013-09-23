@@ -1,72 +1,91 @@
-$base: 26px;
+// Baseline Modular Scale: 
+// http://modularscale.com/scale/?px1=14&px2=&ra1=1.875&ra2=0
 
 html, 
-body {
-    font-family: "Merriweather", Georgia, serif;
-    font-size: 14px; 
-    line-height: $base;
+body { 
+    @extend %baseline;
     color: $black;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: "Merriweather", Georgia, serif;
 }
 
 h1, .h1, 
 h2, .h2,
 h3, .h3,
 h4, .h4,
-h5, .h5 {
+h5, .h5,
+h6, .h6 {
+    font-weight: 400;
     font-family: "Playfair Display", "Times New Roman", Times, serif;
 }
 
 h1, .h1 {
+    font-size: 92px;
+    line-height: $base * 3;
+}
+
+h1.spacious, .h1-spacious {
+    line-height: $base * 4;
+}
+
+h2, .h2 {
     font-size: 49px;
     line-height: $base * 2;
 }
 
-h2, .h2,
-h3, .h3 {
+h3, .h3,
+h4, .h4 {
+    @extend %baseline;
     font-size: $base;
-    line-height: $base;
 }
 
 h4, .h4 {
-    font-size: $base;
-    line-height: $base;
+    @extend %italic;
+    color: $darkgray;
 }
 
-h5, .h5 {
-    font-size: $base;
-}
-
+h5, .h5, 
 h6, .h6 {
+    @extend %baseline;
+    font-size: 14px;
 }
 
 blockquote {
-}
-
-strong {
+    @extend %italic;
+    padding-left: $base;
+    border-left: $border;
 }
 
 a {
+    color: $green;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
 }
 
 
 // MARGINS
 h1, h2, h3, h4, h5, h6, p, blockquote {
-	margin: 0 0 $base;
+    margin: 0 0 $base;
 }
 
 hgroup *, .hgroup * {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 
 // HELPER CLASSES 
 
 .intro {
+    font-size: $base;
+    line-height: $base * 2;
 }
 
 // colors
 .green {
-	color: $green;
+    color: $green;
 }
 
 .white {
@@ -78,9 +97,9 @@ hgroup *, .hgroup * {
 }
 
 .lightgray {
-	color: $lightgray;
+    color: $lightgray;
 }
 
 .darkgray {
-	color: $darkgray;
+    color: $darkgray;
 }
