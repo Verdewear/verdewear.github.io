@@ -1,0 +1,31 @@
+nav {
+	@include outer-container;
+	margin-top: $base;
+
+	.nav-item {
+		@include span-columns(4);
+		border: $border-thin;
+		text-decoration: none;			
+		
+		.nav-item--thumb {
+			padding: $base;
+		}
+
+		.nav-item--label {
+			margin-bottom: 0;
+			padding: ($base * 0.5) $base;
+			background: $black;
+			color: $white;
+			text-align: center;
+		}
+	}
+
+	.nav-item:hover, .nav-item:focus {
+		//border-color: $green;
+
+		.nav-item--label {
+			background: transparent;
+			color: $black;
+		}
+	}
+}

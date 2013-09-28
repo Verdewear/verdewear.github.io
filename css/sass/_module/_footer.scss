@@ -1,0 +1,11 @@
+footer {
+	@include outer-container;
+	margin: ($base * 2) auto;
+
+	.social-cta {
+		@include span-columns(3);
+		padding: $base;
+		color: $black;
+		text-decoration: none;
+	}	
+}

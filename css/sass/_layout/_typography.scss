@@ -2,7 +2,8 @@
 // http://modularscale.com/scale/?px1=14&px2=&ra1=1.875&ra2=0
 
 html, 
-body { 
+body,
+p, .p { 
     @extend %baseline;
     color: $black;
     font-weight: 300;
@@ -54,7 +55,7 @@ h6, .h6 {
 blockquote {
     @extend %italic;
     padding-left: $base;
-    border-left: $border;
+    border-left: $border-thick;
 }
 
 a {

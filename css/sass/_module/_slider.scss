@@ -1,0 +1,32 @@
+.slider {
+	@include outer-container;
+	margin-top: $base * 3;
+
+	.slider-leftarrow,
+	.slider-rightarrow {
+		@include span-columns(1);
+		position: relative;
+		top: 180px;
+	}
+
+	.slider-leftarrow {
+		@include transform(rotate(180deg));
+	}
+
+	.slider-leftarrow:hover polyline,
+	.slider-rightarrow:hover polyline {
+		stroke: $green;
+	}
+
+	.slide {
+		@include span-columns(10);
+		padding: $base;
+		height: $base * 20;
+		position: relative;
+
+		.button-container {
+			position: absolute;
+			bottom: $base;
+		}
+	}
+}

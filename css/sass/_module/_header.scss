@@ -1,0 +1,18 @@
+header {
+	@include outer-container;
+	margin-top: $base;
+
+
+	.header-logo {
+		@include span-columns(2);
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.header-tagline {
+		@include span-columns(10);
+		text-align: right;
+	}
+}

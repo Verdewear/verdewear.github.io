@@ -1,0 +1,14 @@
+.blog-teaser-container {
+	@include outer-container;
+	padding: ($base * 2) 0;
+
+	.blog-teaser {
+		@include span-columns(6);
+		padding: ($base * 2);
+		text-decoration: none;
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+}

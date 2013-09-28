@@ -10,4 +10,10 @@ $green: #b7bd25;
 $base: 26px;
 
 // borders
-$border: 3px solid $black;
+$border-thick: 3px solid $black;
+$border-thin: 1px solid $black;
+$border-radius: 2px;
+
+// transitions
+$transition-slow: all 0.3s ease;
+$transition-fast: all 0.1s ease;

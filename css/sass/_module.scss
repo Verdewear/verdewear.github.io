@@ -1,1 +1,11 @@
-// @import "_module/border";
+// Foundational Elements
+@import "_module/box";
+@import "_module/button";
+@import "_module/bgstripe";
+
+
+// Page Elements
+@import "_module/header";
+@import "_module/nav";
+@import "_module/slider";
+@import "_module/footer";
