@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+	// smooth auto-scrolling
 	var $root = $('html, body');
 	$('a').click(function() {
 	    var href = $.attr(this, 'href');
@@ -9,4 +11,11 @@ $(document).ready(function(){
 	    });
 	    return false;
 	});
+
+	// royal slider
+    $(".royalSlider").royalSlider({
+        // options go here
+        // as an example, enable keyboard arrows nav
+        keyboardNavEnabled: true
+    });  
 });

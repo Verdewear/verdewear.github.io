@@ -1,18 +1,18 @@
 .button {
-	@include linear-gradient(to top, $green, lighten($green, 20%));
 	display: inline-block;
 	padding: ($base * 0.5) ($base * 1.5);
 	border: $border-thin;
-	color: $black;
+	background: $black;
+	color: $green;
 	text-decoration: none;
 }
 
 .button:hover, .button:focus {
-	background: $black;
-	color: $green;
+	@include linear-gradient(to top, $green, $lightgreen);
+	color: $black;
 }
 
 
 .button--box:hover {
-	@include linear-gradient(to top, $green, lighten($green, 20%));
+	@include linear-gradient(to top, $green, $lightgreen);
 }

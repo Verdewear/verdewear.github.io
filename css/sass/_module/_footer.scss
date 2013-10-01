@@ -4,8 +4,20 @@ footer {
 
 	.social-cta {
 		@include span-columns(3);
+		@include omega(4n);
 		padding: $base;
 		color: $black;
 		text-decoration: none;
 	}	
+
+	.legalese {
+		@include span-columns(12);
+		text-align: center; 
+		margin-top: ($base * 2);
+
+		a {
+			color: $darkgray;
+			margin-left: $base;
+		}
+	}
 }

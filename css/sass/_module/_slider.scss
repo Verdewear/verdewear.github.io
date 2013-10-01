@@ -24,9 +24,31 @@
 		height: $base * 20;
 		position: relative;
 
+
 		.button-container {
 			position: absolute;
 			bottom: $base;
 		}
 	}
+
+	// temp images	
+	.slide {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-image: url(/images/temp/slides/walk.jpg);
+
+		h2 {color: $white;}
+	}
+	.slide.two {
+		background-image: url(/images/temp/slides/dog.jpg);
+		background-position: bottom center;
+
+		p, h2 {color: $white;}
+	}
+	.slide.three {
+		background-image: url(/images/temp/slides/dog.jpg);
+		
+		h2 {color: $black;}
+	}
 }
+
